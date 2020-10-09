@@ -18,7 +18,7 @@ class App extends React.Component {
     return ( 
       <div>
         <BrowserRouter>
-          <div className="container">
+          <div style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", flexDirection: "column"}}>
             <Header/>
             <Route path='/' exact component={Landing} />
             <Route path='/surveys' exact component={Dashboard} />
