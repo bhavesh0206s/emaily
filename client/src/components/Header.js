@@ -56,7 +56,7 @@ class Header extends Component {
 
   render() { 
     return (      
-      <nav style={{width: "40em", borderRadius: "10px", background: "linear-gradient(180deg, #EE6E73 0%, #D5649B 100%)", padding: "0.5em", boxShadow: "box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.16)", padding: 0, fontFamily: "Poppins", marginTop: "1em"}}>
+      <nav style={{width: "50em", borderRadius: "10px", background: "linear-gradient(180deg, #EE6E73 0%, #D5649B 100%)", padding: "0.5em", boxShadow: "box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.16)", padding: 0, fontFamily: "Poppins", marginTop: "1em"}}>
         <div style={{padding: "0 1em"}}>
           <Link 
             to={this.props.auth ? '/surveys' : '/'}
