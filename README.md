@@ -1,5 +1,5 @@
 # EMAILY
-###Webapp to send Feedback Emails
+### Webapp to send Emails for Feedback from customers.
 
 ## Login Page:
 
