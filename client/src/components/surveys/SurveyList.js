@@ -32,7 +32,7 @@ class SurveyList extends Component {
 
   render() { 
     return ( 
-      <div>
+      <div style={{marginTop: '7em'}}>
         {this.renderSurveys()}
       </div>
      );

@@ -9,8 +9,8 @@ const SurveyFormReview = ({onCancel, formValues, submitSurvey, history}) => {
   const reviewForm = formFields.map(({label, name}) => {
     return (
       <div key={name}>
-        <label>{label}</label>
-        <div>
+        <label style={{padding: "10px 0px",fontSize: '1.2em'}}>{label}</label>
+        <div style={{paddingBottom: "10px",fontSize: '1.3em'}}>
           {formValues[name]}
         </div>
       </div>
@@ -18,13 +18,15 @@ const SurveyFormReview = ({onCancel, formValues, submitSurvey, history}) => {
   })
 
   return (
-    <div>
-      <h4>Please review your survey</h4>
+    <div className='survey_form' style={{marginTop: '7em'}}>
+      <div>
+        <h3 className='form_title'><span>Please review your survey</span></h3>
+      </div>
       {reviewForm}
-      <button className="yellow darken-3 btn-flat white-text" onClick={onCancel}>
+      <button className="yellow waves-effect waves-light darken-3 btn-flat white-text" onClick={onCancel}>
         Back
       </button>
-      <button onClick={()=> submitSurvey(formValues, history)} className="green btn-flat right white-text">
+      <button onClick={()=> submitSurvey(formValues, history)} className="green waves-effect waves-light btn-flat right white-text">
         Send Survey
         <i className="material-icons right">email</i>
       </button>

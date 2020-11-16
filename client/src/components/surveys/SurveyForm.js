@@ -18,17 +18,20 @@ class SurveyForm extends React.Component {
 
   render() { 
     return (
-      <div>
-      <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
-        {this.renderField()}
-        <Link to='/surveys' className='red btn-flat white-text'>
-          Cancel
-        </Link>
-        <button type='submit' className='teal btn-flat right white-text'>
-          Next
-          <i className='material-icons right'>done</i>
-        </button>
-      </form>
+      <div className='survey_form' style={{marginTop: '7em'}}>
+        <div>
+          <h1 className='form_title'>Survey <span>Form</span></h1>
+        </div>
+        <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
+          {this.renderField()}
+          <Link to='/surveys' className='red waves-effect waves-light btn-flat white-text'>
+            Cancel
+          </Link>
+          <button type='submit' className='teal waves-effect waves-light btn-flat right white-text'>
+            Next
+            <i className='material-icons right'>done</i>
+          </button>
+        </form>
       </div>
     );
   }
