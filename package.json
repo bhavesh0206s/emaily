@@ -26,7 +26,7 @@
     "localtunnel": "^2.0.0",
     "mongoose": "^5.9.7",
     "ngrok": "^3.2.7",
-    "passport": "^0.4.1",
+    "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^2.0.2",
     "sendgrid": "^5.2.3",
